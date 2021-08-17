@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 wiki_title = input('What do you want to find on Wikipedia?\n')
 wiki_title = wiki_title.replace(' ', '_')
 url = 'https://en.wikipedia.org/wiki/' + wiki_title
+print(url)
 
 ans = requests.get(url)
 
